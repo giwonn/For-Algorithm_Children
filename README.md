@@ -1,4 +1,4 @@
-# Algorithm_Basic
+# For-Algorithm_Children
 알린이들 육성기 ("알고리즘 어린이" 라는 뜻)
 <br>
 일주일에 최대 3문제 풀기!  
