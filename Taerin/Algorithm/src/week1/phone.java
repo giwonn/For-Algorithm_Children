@@ -1,40 +1,38 @@
 package week1;
 
+import java.util.Scanner;
+
 public class phone {
 
 	public static void main(String[] args) {
-		// 핸드폰 뒷자리 4개를 제외하고 전부 ****처리
-		// phone_number 문자열
-		// substring 사용
-		// substrung-4
+		//charAt i번째 인덱스를 반환 그 번짓수의 값을 불러오려고 
+		//System.out.println("문자를 제외한 핸드폰 번호만 입력해주세요");
+		//Scanner sc = new Scanner(System.in);
+		//String num = sc.nextLine();
+		
+		
+		System.out.println(solution("01022223333"));
 
-		String s = "";
-//		class Solution {
-//		    public String solution(String phone_number) {		 
-//			StringBuilder answer = new StringBuilder(phone_number);
-//				 
-//			for(int i = 0; i < phone_number.length()-4; i++) {
-//				answer.setCharAt(i, '*');
-//			}
-//			return answer.toString();
-//		    }
-//		}
-//	__________________________________________________ 답 1
-
-//		class Solution {
-//			public String solution(String phone_number) {
-//				String answer = "";
-//				for (int i = 0; i < phone_number.length(); i++) {
-//					if (i < phone_number.length() - 4) {
-//						answer += "*";
-//					} else {
-//						answer += phone_number.charAt(i);
-//					}
-//				}
-//				return answer;
-//			}
-//		}
-//   ____________________________________________________ 답 2
+	}
+	
+	private static String solution(String phone_number) {
+		
+		//1. 번호 길이구하기
+		//2. 마지막 4자리 제외한 *로 바꾸기
+		//3. 출력
+		
+		String answer = "";
+		//length와 lenght()차이 스트링에서만 오직 length();
+		
+		for(int i = 0; i < phone_number.length(); i++) {
+			if(i < phone_number.length()-4) {
+				answer += "*";
+			} else {
+				answer += phone_number.charAt(i);
+			}
+		}
+		
+		return answer;
 	}
 
 }
