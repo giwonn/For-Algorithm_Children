@@ -18,4 +18,5 @@
 
 | 주차 | 1 | 2 | 3 |
 |:---:|:---:|:---:|:---:|
-| 1주차<br>(~ 9/26) | [핸드폰 번호 가리기 <br>\[level 1\]](https://programmers.co.kr/learn/courses/30/lessons/12948) | [x만큼 간격이 있는 n개의 숫자<br>\[level 1\]](https://programmers.co.kr/learn/courses/30/lessons/12954) ||
+| 2회차<br>(~ 10/12) | [같은 숫자는 싫어 <br>\[level 1\]](https://programmers.co.kr/learn/courses/30/lessons/12906) | [순열검사<br>\[level 1\]](https://programmers.co.kr/learn/courses/18/lessons/1877) | [자릿수 더하기<br>\[level 1\]](https://programmers.co.kr/learn/courses/30/lessons/12931) |
+| 1회차<br>(~ 9/26) | [핸드폰 번호 가리기 <br>\[level 1\]](https://programmers.co.kr/learn/courses/30/lessons/12948) | [x만큼 간격이 있는 n개의 숫자<br>\[level 1\]](https://programmers.co.kr/learn/courses/30/lessons/12954) ||
