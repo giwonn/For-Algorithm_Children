@@ -3,26 +3,26 @@ package week1;
 public class phone2 {
 
 	public static void main(String[] args) {
-		
+
 		System.out.println(solution("01022223333"));
 	}
-	
+
 	private static String solution(String phone_number) {
-		// substring »ç¿ëÇÏ±â
-		//1. ¹øÈ£ ±æÀÌ±¸ÇÏ±â
-		//2. ¸¶Áö¸· 4ÀÚ¸® Á¦¿ÜÇÑ *·Î ¹Ù²Ù±â
-		//3. Ãâ·Â
-		
+		// substring ì‚¬ìš©í•˜ê¸°
+		// 1. ë²ˆí˜¸ ê¸¸ì´êµ¬í•˜ê¸°
+		// 2. ë§ˆì§€ë§‰ 4ìë¦¬ ì œì™¸í•œ *ë¡œ ë°”ê¾¸ê¸°
+		// 3. ì¶œë ¥
+
 		String answer = "";
-		//length¿Í lenght()Â÷ÀÌ ½ºÆ®¸µ¿¡¼­¸¸ ¿ÀÁ÷ length();
-		
-		for(int i = 0; i < phone_number.length()-4; i++) {
-				answer += "*";
+		// lengthì™€ lenght()ì°¨ì´ ìŠ¤íŠ¸ë§ì—ì„œë§Œ ì˜¤ì§ length();
+
+		for (int i = 0; i < phone_number.length() - 4; i++) {
+			answer += "*";
 		}
-		
-		// substring(start, end) => startºÎÅÍ end-1±îÁö ¸®ÅÏ (end´Â »ı·«°¡´É)
-		answer += phone_number.substring(phone_number.length()-4);
-		
+
+		// substring(start, end) => startë¶€í„° end-1ê¹Œì§€ ë¦¬í„´ (endëŠ” ìƒëµê°€ëŠ¥)
+		answer += phone_number.substring(phone_number.length() - 4);
+
 		return answer;
 	}
 

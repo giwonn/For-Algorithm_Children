@@ -5,33 +5,31 @@ import java.util.Scanner;
 public class phone {
 
 	public static void main(String[] args) {
-		//charAt i¹øÂ° ÀÎµ¦½º¸¦ ¹İÈ¯ ±× ¹øÁş¼öÀÇ °ªÀ» ºÒ·¯¿À·Á°í 
-		//System.out.println("¹®ÀÚ¸¦ Á¦¿ÜÇÑ ÇÚµåÆù ¹øÈ£¸¸ ÀÔ·ÂÇØÁÖ¼¼¿ä");
-		//Scanner sc = new Scanner(System.in);
-		//String num = sc.nextLine();
-		
-		
+		// charAt ië²ˆì§¸ ì¸ë±ìŠ¤ë¥¼ ë°˜í™˜ ê·¸ ë²ˆì§“ìˆ˜ì˜ ê°’ì„ ë¶ˆëŸ¬ì˜¤ë ¤ê³ 
+		// System.out.println("ë¬¸ìë¥¼ ì œì™¸í•œ í•¸ë“œí° ë²ˆí˜¸ë§Œ ì…ë ¥í•´ì£¼ì„¸ìš”");
+		// Scanner sc = new Scanner(System.in);
+		// String num = sc.nextLine();
+
 		System.out.println(solution("01022223333"));
 
 	}
-	
+
 	private static String solution(String phone_number) {
-		
-		//1. ¹øÈ£ ±æÀÌ±¸ÇÏ±â
-		//2. ¸¶Áö¸· 4ÀÚ¸® Á¦¿ÜÇÑ *·Î ¹Ù²Ù±â
-		//3. Ãâ·Â
-		
+
+		// 1. ë²ˆí˜¸ ê¸¸ì´êµ¬í•˜ê¸°
+		// 2. ë§ˆì§€ë§‰ 4ìë¦¬ ì œì™¸í•œ *ë¡œ ë°”ê¾¸ê¸°
+		// 3. ì¶œë ¥
+
 		String answer = "";
-		//length¿Í lenght()Â÷ÀÌ ½ºÆ®¸µ¿¡¼­¸¸ ¿ÀÁ÷ length();
-		
-		for(int i = 0; i < phone_number.length(); i++) {
-			if(i < phone_number.length()-4) {
+		// lengthì™€ lenght()ì°¨ì´ ìŠ¤íŠ¸ë§ì—ì„œë§Œ ì˜¤ì§ length();
+
+		for (int i = 0; i < phone_number.length(); i++) {
+			if (i < phone_number.length() - 4) {
 				answer += "*";
 			} else {
 				answer += phone_number.charAt(i);
 			}
 		}
-		
 		return answer;
 	}
 
