@@ -23,7 +23,7 @@ public class remove_duplication {
 		ArrayList<Integer> answer = new ArrayList<>();
 		
 		
-		return answer;
+		return null;
 	}
 
 }
