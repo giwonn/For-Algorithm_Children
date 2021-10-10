@@ -12,7 +12,7 @@ public class remove_duplication {
 		solution(answer);
 
 	}
-	private static int solution(int []arr){
+	private static Object solution(int []arr){
 		//arraylist or linkedlist
 		 
 		//<> 제네릭임 그래서 int 사용 불가 무조건 integer사용 
